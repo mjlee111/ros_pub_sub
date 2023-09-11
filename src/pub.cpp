@@ -7,9 +7,9 @@ int main(int argc, char** argv)  // node 메인 함수
   ros::NodeHandle nh;                             // ROS 시스템과의 통신을 위한 NodeHandle 선언
 
   // 퍼블리셔 선언 -> simple_pub
-  // 토픽명 -> "/ros_pub_test"
+  // 토픽명 -> "/robit_msgs"
   // 퍼블리셔 큐 사이즈 -> 10
-  ros::Publisher simple_pub = nh.advertise<ros_pub_sub::myCustomMsg>("/ros_pub_test", 10);
+  ros::Publisher simple_pub = nh.advertise<ros_pub_sub::myCustomMsg>("/robit_msgs", 10);
 
   ros::Rate loop_rate(10);  // ROS Node 의 루프 주기 설정. 숫자 -> Hz. 현재 10 Hz.
 
