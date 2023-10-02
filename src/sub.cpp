@@ -5,7 +5,7 @@
 // Callback 함수 선언
 void msgCallback(const ros_pub_sub::myCustomMsg::ConstPtr& msg)
 {
-  std::cout << "Callbakc!" << std::endl;
+  std::cout << "Callback!" << std::endl;
   ROS_INFO("-------------------------------------------------------------------------");
   ROS_INFO("Subscribed Messages. Published Time = %d.%d", msg->stamp.sec, msg->stamp.nsec);
   ROS_INFO("Subscribed Messages. Published Data = %ld", msg->data);
